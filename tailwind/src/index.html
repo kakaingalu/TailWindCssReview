@@ -22,7 +22,7 @@
     </div>
 
 
-    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+    <div class="py-8 px-8 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
       <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Woman's Face" />
       <div class="text-center space-y-2 sm:text-left">
         <div class="space-y-0.5">
@@ -44,7 +44,7 @@
       </button>
     </template>
     <!--HANDLING HOVER, FOCUS AND OTHER STATES  LESSON 2 -->
-    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+    <div class="py-8 px-8 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
       <div class="text-center space-y-2 sm:text-left">
         <button class="bg-sky-500 hover:bg-sky-700 ...">
           Save changes
@@ -53,7 +53,7 @@
     </div>
 
     
-    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+    <div class="py-8 px-8 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
       <div class="text-center space-y-2 sm:text-left">
         <button class="dark:md:hover:bg-fuchsia-600 ...">
           Save changes
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+    <div class="py-8 px-8 max-w-sm mx-auto rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
       <div class="text-center space-y-2 sm:text-left">
         <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
           Save changes
@@ -69,11 +69,29 @@
       </div>
     </div>
 
-    <!-- <button type="button" class="bg-violet-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white flex items-center space-x-4">
-      Save changes
-    </button> -->
+    <div class="py-8 px-8 max-w-sm mx-auto  rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+      <div class="text-center space-y-2 sm:text-left">
+        <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+          Save changes
+        </button>
+      </div>
+    </div>
 
-    
-  
+    <div class="py-8 px-8 max-w-sm mx-auto  rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+      <div class="text-center space-y-2 sm:text-left">
+        <ul role="list" class="p-6 divide-y divide-slate-200">
+          {#each people as person}
+          <!-- Remove top/bottom padding when first/last child-->
+          <li class="flex py-4 first:pt-0 last:pb-0">
+            <img class="h-10 w-10 rounded-full" src="{person.imageUrl}" alt=""/>
+            <div class="ml-3 overflow-hidden" >
+              <p class="text-sm font-medium text-slate-900">{person.name}</p>
+              <p class="text-sm text-slate-500 truncate">{person.email}</p> 
+            </div>
+          </li>
+          {/each}
+        </ul> 
+      </div>
+    </div>
   </body>
 </html>
