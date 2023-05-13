@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <!--UTILITY FIRST FUNDERMENTALS LESSSON 1-->
     <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
       <div class="shrink-0">
         <img class="h-12 w-12" src="https://img.freepik.com/free-vector/gradient-speech-therapy-logo_23-2149195563.jpg?w=740&t=st=1683926074~exp=1683926674~hmac=0dedb60bbace747615e90688dfa1d58b1cdf7c711c942d88c1926dc4786e71bf">
@@ -42,11 +43,37 @@
         <slot/>
       </button>
     </template>
-    <button class="bg-sky-500 hover:bg-sky-700 ...">
+    <!--HANDLING HOVER, FOCUS AND OTHER STATES  LESSON 2 -->
+    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+      <div class="text-center space-y-2 sm:text-left">
+        <button class="bg-sky-500 hover:bg-sky-700 ...">
+          Save changes
+        </button>
+      </div>
+    </div>
+
+    
+    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+      <div class="text-center space-y-2 sm:text-left">
+        <button class="dark:md:hover:bg-fuchsia-600 ...">
+          Save changes
+        </button>
+      </div>
+    </div>
+
+    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 flex items-center sm:space-y-0 sm:space-x-6">
+      <div class="text-center space-y-2 sm:text-left">
+        <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ...">
+          Save changes
+        </button>
+      </div>
+    </div>
+
+    <!-- <button type="button" class="bg-violet-500 hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 active:bg-violet-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white flex items-center space-x-4">
       Save changes
-    </button>
-    <button class="dark:md:hover:bg-fuchsia-600 ...">
-      Save changes
-    </button>
+    </button> -->
+
+    
+  
   </body>
 </html>
